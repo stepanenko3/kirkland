@@ -1,0 +1,31 @@
+{
+    "name": "work.local",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {},
+    "private": true,
+    "dependencies": {},
+    "devDependencies": {
+        "browser-sync": "^2.24.7",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-changed": "^3.2.0",
+        "gulp-clean-css": "^3.10.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-csslint": "^1.0.1",
+        "gulp-filesize": "0.0.6",
+        "gulp-iconfont": "^10.0.1",
+        "gulp-iconfont-css": "^2.3.0",
+        "gulp-if": "^2.0.2",
+        "gulp-notify": "^3.2.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.1",
+        "gulp-shorthand": "^1.1.0",
+        "gulp-size": "^3.0.0",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-uncss": "^1.0.6"
+    },
+    "main": "gulpfile.js",
+    "author": "",
+    "description": ""
+}

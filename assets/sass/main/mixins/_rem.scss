@@ -1,0 +1,16 @@
+@function rem( $pixels, $context: $base-font-size ) {
+
+    @if ( unitless( $pixels ) ) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if ( not $enable-rem ) {
+        @return $pixels;
+    }
+
+    @if ( unitless( $context ) ) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1rem;
+}

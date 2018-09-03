@@ -1,0 +1,114 @@
+$body-bg: #fafafa;
+
+$enable-rem: true;
+$base-font-size: 16px;
+$use-font-size: $base-font-size / 16 * 10;
+$base-font-weight: 400 !default;
+
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+
+$font-size-h1: floor(($base-font-size * 2.6)) !default;
+$font-size-h2: floor(($base-font-size * 2.15)) !default;
+$font-size-h3: ceil(($base-font-size * 1.7)) !default;
+$font-size-h4: ceil(($base-font-size * 1.25)) !default;
+$font-size-h5: $base-font-size !default;
+$font-size-h6: ceil(($base-font-size * 0.85)) !default;
+
+$z-layers: (
+        "footer"        : 1000,
+        "sidebar"       : 1001,
+        "sidebarPanel"  : 1002,
+);
+
+$enable-grid-classes: true;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+) !default;
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px,
+) !default;
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+
+
+//
+// Color system
+//
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
+
+$grays: (
+        100: $gray-100,
+        200: $gray-200,
+        300: $gray-300,
+        400: $gray-400,
+        500: $gray-500,
+        600: $gray-600,
+        700: $gray-700,
+        800: $gray-800,
+        900: $gray-900
+) !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: (
+        blue: $blue,
+        indigo: $indigo,
+        purple: $purple,
+        pink: $pink,
+        red: $red,
+        orange: $orange,
+        yellow: $yellow,
+        green: $green,
+        teal: $teal,
+        cyan: $cyan,
+        white: $white,
+        gray: $gray-600,
+        gray-dark: $gray-800
+) !default;
+
+$theme-colors: (
+        primary: $blue,
+        secondary: $gray-600,
+        success: $green,
+        info: $cyan,
+        warning: $yellow,
+        danger: $red,
+        light: $gray-100,
+        dark: $gray-800
+) !default;
