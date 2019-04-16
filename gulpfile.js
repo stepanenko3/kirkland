@@ -22,42 +22,44 @@ dir.sass_watch = [
     dir.src + '**/*.scss',
 ];
 
-gulp.task( 'sass', function () {
-    return gulp.src( dir.sass )
-        .pipe( changed( dir.dist )  )
-        .pipe( sourcemaps.init() )
-        .pipe( sass({ outputStyle: 'expanded' }).on( 'error', sass.logError ) )
-        .pipe( autoprefixer({ browsers: ['last 4 versions', '> .5%', 'ie 8', 'ie 7', 'iOS 7'] }) )
-        .pipe( gulp.dest( dir.dist ) )
+function scssTask() {
+    return gulp.src(dir.sass)
+        .pipe(changed(dir.dist))
+        .pipe(sourcemaps.init())
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+        .pipe(autoprefixer({ browsers: ['last 4 versions', '> .5%', 'ie 8', 'ie 7', 'iOS 7'] }))
+        .pipe(gulp.dest(dir.dist))
 
-        .pipe( cleancss() )
-        .pipe( rename({ suffix: '.min' }) )
-        .pipe( gulp.dest( dir.dist ) )
+        .pipe(cleancss())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest(dir.dist))
 
-        .pipe( sourcemaps.write('./', { includeContent: false,  mapSources: false }) )
-        .pipe( gulp.dest( dir.dist ) )
+        .pipe(sourcemaps.write('./', { includeContent: false, mapSources: false }))
+        .pipe(gulp.dest(dir.dist))
 
-        .pipe( browserSync.stream() )
-        .pipe( size() );
-});
+        .pipe(browserSync.stream())
+        .pipe(size());
+}
 
-gulp.task( 'sass:watch', function () {
-    gulp.watch( dir.sass_watch, ['sass'] );
-});
-
-gulp.task( 'default', ['watch', 'browser-sync'] );
-gulp.task( 'watch', ['sass:watch'] );
-
-gulp.task( 'browser-sync', function() {
+function browserSyncTask() {
     browserSync.init({
-        server  : {
-            baseDir     : "./"
+        server: {
+            baseDir: "./"
         },
-        port    : 8080,
-        open    : true,
-        notify  : true,
+        port: 8080,
+        open: true,
+        notify: true,
         logLevel: 'silent'
     });
 
     gulp.watch("./*.html").on('change', browserSync.reload);
-});
+}
+
+function watchTask() {
+    gulp.watch(dir.sass_watch, scssTask);
+}
+
+gulp.task('scss', scssTask);
+gulp.task('watch', watchTask);
+
+gulp.task('default', gulp.parallel(watchTask, browserSyncTask));
