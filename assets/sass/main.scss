@@ -372,11 +372,11 @@ body {
 
         &__item:hover &__link {
             color: #f96f14;
+        }
 
-            &:before {
-                opacity: 1;
-                visibility: visible;
-            }
+        &__item--with-child:hover &__link:before {
+            opacity: 1;
+            visibility: visible;
         }
 
         &__list {
@@ -830,6 +830,17 @@ body {
 }
 
 .page {
+
+    .h1 {
+        font-weight: bold;
+        font-size: 33px;
+        line-height: normal;
+        color: #595959;
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
     &__title {
         font-weight: bold;
         font-size: 33px;
@@ -1325,5 +1336,101 @@ body {
 
     &--ocfilter {
         padding-top: 50px;
+    }
+}
+
+.bread {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    
+    li {
+        list-style: none;
+
+        a {
+            font-weight: normal;
+            font-size: 17px;
+            line-height: normal;
+            color: rgba(62, 62, 62, 0.5);
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: #F96F14;
+            }
+        }
+
+        &:not(:last-child) {
+            a {
+                font-weight: 500;
+                color: #F96F14;
+
+                &:after {
+                    font-size: 11px;
+                    display: block;
+                    margin: 0 15px;
+                    content: "\e901";
+                    color: #535353;
+                    font-family: 'icomoon' !important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+
+                    /* Better Font Rendering =========== */
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.catalog-item {
+    display: block;
+    margin-bottom: 50px;
+
+    img {
+        transition: all .3s;
+    }
+
+    &:hover img {
+        opacity: 0.85;
+    }
+    
+    >a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        >a {
+            display: block;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: normal;
+            color: #595959;
+            margin-bottom: 12px;
+            transition: all .3s;
+
+            &:first-child {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 31px;
+            }
+
+            &:hover {
+                color: #F96F14;
+            }
+        }
     }
 }
