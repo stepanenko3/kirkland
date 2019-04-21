@@ -166,6 +166,12 @@ body {
                 font-size: 19px;
                 line-height: 1;
                 color: #f96f14;
+                transition: all .3s;
+
+                &:hover {
+                    background: #f96f14;
+                    color: #fff;
+                }
             }
 
             .badge {
@@ -288,6 +294,11 @@ body {
                 color: #595959;
                 margin-bottom: 7px;
                 text-align: center;
+                transition: all .3s;
+
+                &:hover {
+                    color: #f96f14;
+                }
             }
         }
 
@@ -598,7 +609,7 @@ body {
         align-items: center;
         justify-content: space-between;
 
-        > a {
+        > a, > span {
             font-weight: 300;
             font-size: 13px;
             line-height: normal;
@@ -1142,5 +1153,177 @@ body {
     label input:focus:not(:checked) ~ .icon-star:last-child {
         color: #000;
         text-shadow: 0 0 5px #FECE22;
+    }
+}
+
+.footer {
+    background: #FFEBB9;
+    padding: 50px 0 0;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    &__copyright {
+        font-size: 13px;
+        line-height: normal;
+        letter-spacing: 0.08em;
+        color: #3E3E3E;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > * {
+            color: #3E3E3E;
+            display: block;
+            margin: 0 10px;
+            transition: all .3s;
+            font-size: 22px;
+
+            &:hover {
+                color: #F96F14;
+            }
+        }
+    }
+
+    &__make {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 120px;
+        color: #3e3e3e;
+        transition: all .3s;
+
+        &:hover {
+            color: #F96F14;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        color: #3E3E3E;
+        display: block;
+        margin-bottom: 25px;
+        height: 20px;
+    }
+
+    &__menu {
+        a {
+            font-weight: 300;
+            font-size: 18px;
+            color: #3E3E3E;
+            display: block;
+            transition: all .3s;
+            margin-bottom: 15px;
+
+            &:hover {
+                color: #F96F14;
+            }
+        }
+
+        span {
+            font-weight: 300;
+            font-size: 18px;
+            color: #3E3E3E;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__phone {
+        font-weight: 500 !important;
+    }
+}
+
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFEBB9;
+    padding: 30px 15px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .3s;
+    z-index: 100;
+    overflow: auto;
+    
+    @media(max-width: 768px) {
+        display: flex;
+
+        .ocfilter {
+            display: block;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 10px;
+        z-index: 3;
+        cursor: pointer;
+
+        &:before {
+            font-family: 'icomoon' !important;
+            content: "\e90a";
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #3E3E3E;
+        }
+    }
+
+    &--open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    > a {
+        font-size: 20px;
+        color: #3E3E3E;
+        font-weight: 600;
+        padding: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--general {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--ocfilter {
+        padding-top: 50px;
     }
 }
