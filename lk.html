@@ -707,85 +707,173 @@
         </div>
     </div>
 
-    <div class="page">
-        <div class="container">
-            <div class="product-page">
-                <ul class="bread">
-                    <li><a href="https://toys.stpnnk.top">Главная</a></li>
-                    <li><a href="https://toys.stpnnk.top/news">Список новостей</a></li>
-                    <li><a href="https://toys.stpnnk.top/aaaa">Как вырастить свой сад</a></li>
-                </ul>
+    <div class="container  page page--pb">
+        <ul class="bread">
+            <li><a href="https://toys.stpnnk.top">Главная</a></li>
+            <li><a href="https://toys.stpnnk.top/account">Личный Кабинет</a></li>
+        </ul>
+        <h2 class="page__title">Моя учетная запись</h2>
+        <div class="row">
+            <div id="content" class="account_info col-sm-12">
+                <div class="account-page-reward">
+                    <div class="account-page-reward__header">
+                        На Вашем счету <span><?= $total ?> <small>тойсиков</small></span>
+                    </div>
 
-                <div class="h1">Как вырастить свой сад</div>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td class="text-left">Добавлено</td>
+                                <td class="text-left">Описание</td>
+                                <td class="text-right">Бонусные баллы</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-left">24.04.2019</td>
+                                <td class="text-left"> Тест </td>
+                                <td class="text-right">500</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">24.04.2019</td>
+                                <td class="text-left"> Заказ 33 </td>
+                                <td class="text-right">-100</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">24.04.2019</td>
+                                <td class="text-left"> <a
+                                        href="https://toys.stpnnk.top/index.php?route=account/order/info&amp;order_id=89">Номер
+                                        заказа: #89</a>
+                                </td>
+                                <td class="text-right">100</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">24.04.2019</td>
+                                <td class="text-left"> demo1 </td>
+                                <td class="text-right">30</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">24.04.2019</td>
+                                <td class="text-left"> demo2 </td>
+                                <td class="text-right">200</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">24.04.2019</td>
+                                <td class="text-left"> </td>
+                                <td class="text-right">100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <div class="row">
-                        <div class="col-md-5">
-                            <div class="product-carousel-container">
-                                <div class="product-carousel owl-carousel">
-                                    <div><img src="https://toys.stpnnk.top/image/cache/catalog/dd-600x600.png" alt="Demo" /></div>
-                                                                <div><img src="https://toys.stpnnk.top/image/cache/catalog/dd-600x600.png" alt="Demo" /></div>
-                                                                <div><img src="https://toys.stpnnk.top/image/cache/catalog/dd-600x600.png" alt="Demo" /></div>
-                                                                <div><img src="https://toys.stpnnk.top/image/cache/catalog/dd-600x600.png" alt="Demo" /></div>
-                                                                <div><img src="https://toys.stpnnk.top/image/cache/catalog/dd-600x600.png" alt="Demo" /></div>
-                                                        </div>
-                            </div>
+
+
+                <div class="account-order">
+                    <div class="account-order__image">
+                        <img src="https://toys.stpnnk.top/image/cache/catalog/dd-367x367.png">
+                    </div>
+                    <div class="account-order__content">
+                        <div class="account-order__info">
+                            <b>#84</b> номер заказа
                         </div>
-                        <div class="col-md-4">
-                            <div class="product__stock">
-                                                        product_in_stock</span>
-                                                </div>
-            
-                                                                        <div class="product__price">
-                                        <div class="old">3 000 грн</div>
-                                        <div>1 500 грн</div>
-                                    </div>
-                                         
-            
-                            <div class="product-actions">
-                                <a data-button-cart class="product-actions__buy">
-                                    Купить  
-                                
-                                </a>
-                                <div class="count_block">
-                                        <label class="control-label" style="display: none;"
-                                               for="input-quantity"></label>
-                                        <input style="display: none;" type="text" name="quantity"
-                                               value="1" size="2" id="input-quantity"
-                                               class="form-control"/>
-                                        <input type="hidden" name="product_id" value="694"/>
-                                        <span id="minus">—</span>
-                                        <span id="quantity_count">1</span>
-                                        <span id="plus">+</span>
-                                    </div>
-            
-
-                                    <span class="icon-like"></span>
-                            </div>
-            
-                                   
-                            <div class="product__rating">
-                                    <div class="rating">
-                                                                                                    <span class="icon-star active"></span>
-                                                                                                                                <span class="icon-star active"></span>
-                                                                                                                                <span class="icon-star"></span>
-                                                                                                                                <span class="icon-star"></span>
-                                                                                                                                <span class="icon-star"></span>
-                                                                                        </div>
-                                    <span>0 отзывов</span>
-                                </div>
-
-                            <div class="product__short-text">
-                                    Игровой набор Battat Забавный автопарк (4 резиновые машинки-погремушки)  - первый автопарк Вашего малыша. 4 инерцинерционные красочные машинки готовы устроить настояонные красочные машинки готовы устроить настоящую
-                            </div>
-                            
+                        <div class="account-order__info">
+                            <b>1</b> товаров
+                        </div>
+                        <div class="account-order__info">
+                            <b>75 012 грн</b>
                         </div>
                     </div>
+                    <div class="account-order__status">
+                        Canceled </div>
+                    <a class="account-order__more"
+                        href="https://toys.stpnnk.top/index.php?route=account/order/info&amp;order_id=84">
+                        Просмотр </a>
+                </div>
+                <div class="account-order">
+                    <div class="account-order__image">
+                        <img src="https://toys.stpnnk.top/image/cache/catalog/dd-367x367.png">
+                    </div>
+                    <div class="account-order__content">
+                        <div class="account-order__info">
+                            <b>#84</b> номер заказа
+                        </div>
+                        <div class="account-order__info">
+                            <b>1</b> товаров
+                        </div>
+                        <div class="account-order__info">
+                            <b>75 012 грн</b>
+                        </div>
+                    </div>
+                    <div class="account-order__status">
+                        Canceled </div>
+                    <a class="account-order__more"
+                        href="https://toys.stpnnk.top/index.php?route=account/order/info&amp;order_id=84">
+                        Просмотр </a>
+                </div>
+
+
+
+                <ul class="account-page">
+                    <li><a href="https://toys.stpnnk.top/edit-account">
+                            <img src="https://toys.stpnnk.top/catalog/view/theme/default/image/account-icon-3.png"
+                                alt="">
+                            <div>
+                                <span>account_about_me
+                                    <!-- Обо мне --></span>
+                                <p>Изменить контактную информацию</p>
+                            </div>
+                        </a></li>
+                    <li><a href="https://toys.stpnnk.top/change-password">
+                            <img src="https://toys.stpnnk.top/catalog/view/theme/default/image/account-icon-4.png"
+                                alt="">
+                            <div>
+                                <span>account_settings
+                                    <!-- Настройки --></span>
+                                <p>Изменить свой пароль</p>
+                            </div>
+                        </a></li>
+                    <li><a href="https://toys.stpnnk.top/address-book">
+                            <img src="https://toys.stpnnk.top/catalog/view/theme/default/image/account-icon-10.png"
+                                alt="">
+                            <div>
+                                <span>account_addresses
+                                    <!-- Мои адреса --></span>
+                                <p>Изменить мои адреса</p>
+                            </div>
+                        </a></li>
+                    <li><a href="https://toys.stpnnk.top/wishlist">
+                            <img src="https://toys.stpnnk.top/catalog/view/theme/default/image/account-icon-5.png"
+                                alt="">
+                            <div>
+                                <span>account_wishlist
+                                    <!-- Закладки --></span>
+                                <p>Посмотреть закладки</p>
+                            </div>
+                        </a></li>
+                    <li><a href="https://toys.stpnnk.top/order-history">
+                            <img src="https://toys.stpnnk.top/catalog/view/theme/default/image/account-icon-1.png"
+                                alt="">
+                            <div>
+                                <span>История заказов</span>
+                                <p>account_orders
+                                    <!-- Статус и история Ваших заказов -->
+                                </p>
+                            </div>
+                        </a></li>
+                    <li><a href="https://toys.stpnnk.top/logout">
+                            <img src="https://toys.stpnnk.top/catalog/view/theme/default/image/account-icon-8.png"
+                                alt="">
+                            <div>
+                                <span>account_logout
+                                    <!-- Выход --></span>
+                                <p>Выйти</p>
+                            </div>
+                        </a></li>
+                </ul>
 
             </div>
         </div>
     </div>
-
-    <div class="sales-countdown"><div class="sales-countdown__item"><div class="sales-countdown__number">2423</div><div class="sales-countdown__text">дней</div></div><div class="sales-countdown__item"><div class="sales-countdown__number">01</div><div class="sales-countdown__text">часов</div></div><div class="sales-countdown__item"><div class="sales-countdown__number">46</div><div class="sales-countdown__text">минут</div></div><div class="sales-countdown__item"><div class="sales-countdown__number">50</div><div class="sales-countdown__text">секунд</div></div></div>
 
     <footer class="footer">
         <div class="container">
@@ -894,41 +982,6 @@
     <script>
 
         $(document).ready(function () {
-            $(".product-carousel").owlCarousel({
-                loop: true,
-                items: 1,
-                margin: 0,
-                stagePadding: 0,
-                autoplay: false
-            });
-
-            dotcount = 1;
-
-            jQuery('.product-carousel .owl-dot').each(function () {
-                jQuery(this).addClass('dotnumber' + dotcount);
-                jQuery(this).attr('data-info', dotcount);
-                dotcount = dotcount + 1;
-            });
-
-            slidecount = 1;
-
-            jQuery('.product-carousel .owl-item').not('.cloned').each(function () {
-                jQuery(this).addClass('slidenumber' + slidecount);
-                slidecount = slidecount + 1;
-            });
-
-            jQuery('.product-carousel .owl-dot').each(function () {
-                grab = jQuery(this).data('info');
-                slidegrab = jQuery('.product-carousel .slidenumber' + grab + ' img').attr('src');
-                jQuery(this).css("background-image", "url(" + slidegrab + ")");
-            });
-
-            amount = $('.product-carousel .owl-dot').length;
-            gotowidth = 100 / amount;
-            jQuery('.product-carousel .owl-dot').css("height", gotowidth + "%");
-
-
-
             $('.home-tabs__caption').on('click', 'li:not(.active)', function () {
                 $(this)
                     .addClass('active').siblings().removeClass('active')
