@@ -1771,7 +1771,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="footer__title">
                         Категории
                     </div>
@@ -1784,7 +1784,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="footer__title"></div>
                     <div class="footer__menu">
                         <a href="#">Игрушки</a>
@@ -1795,7 +1795,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="footer__title">
                         Категории
                     </div>
@@ -1808,7 +1808,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="footer__title">
                         Категории
                     </div>
@@ -1838,6 +1838,17 @@
     </footer>
 
 
+    <div class="mobile-menu">
+        <div class="mobile-menu__close" onclick="toggleMenu()"></div>
+    
+                <a href="/pay">
+                Оплата        </a>
+                <a href="/delivery">
+                Доставка        </a>
+                <a href="tel:0669999999">
+                0669999999        </a>
+        </div>
+
     <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 
@@ -1863,24 +1874,67 @@
             });
 
             $('.products-slider').owlCarousel({
-                items: 5,
-                nav: true,
                 navText: ['<span class="icon-arrow-left"></span>', '<span class="icon-arrow-right"></span>'],
-                margin: 30,
+                responsive: {
+                    1200: {
+                        items: 5,
+                        nav: true,
+                        margin: 30,
+                    },
+                    900: {
+                        items: 3,
+                        nav: true,
+                        margin: 20,
+                    },
+                    0: {
+                        nav: true,
+                        items: 1,
+                        margin: 0,
+                    }
+                }
             });
 
             $('.news-slider').owlCarousel({
-                items: 4,
-                nav: true,
                 navText: ['<span class="icon-arrow-left"></span>', '<span class="icon-arrow-right"></span>'],
-                margin: 30,
+                responsive: {
+                    1200: {
+                        items: 4,
+                        nav: true,
+                        margin: 30,
+                    },
+                    900: {
+                        items: 2,
+                        nav: true,
+                        margin: 20,
+                    },
+                    0: {
+                        nav: true,
+                        items: 1,
+                        margin: 0,
+                    }
+                }
             });
 
             $('.brands-slider').owlCarousel({
-                items: 6,
                 nav: true,
                 navText: ['<span class="icon-arrow-left"></span>', '<span class="icon-arrow-right"></span>'],
-                margin: 30,
+                responsive: {
+                    1200: {
+                        items: 6,
+                        nav: true,
+                        margin: 30,
+                    },
+                    900: {
+                        items: 4,
+                        nav: true,
+                        margin: 20,
+                    },
+                    0: {
+                        nav: true,
+                        items: 2,
+                        margin: 0,
+                    }
+                }
             });
         });
     </script>
