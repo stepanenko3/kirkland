@@ -3385,11 +3385,10 @@ body {
           align-items: center;
 }
 
-.header__menu > * {
+.header__menu a {
   font-size: 17px;
   line-height: normal;
   color: #595959;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3401,7 +3400,7 @@ body {
   margin-left: 25px;
 }
 
-.header__menu > * span {
+.header__menu a span {
   color: #f96f14;
   display: block;
   margin-right: 15px;
@@ -3409,11 +3408,11 @@ body {
 }
 
 @media (max-width: 1199px) {
-  .header__menu > * {
+  .header__menu a {
     margin-left: 15px;
     font-size: 0;
   }
-  .header__menu > * span {
+  .header__menu a span {
     font-size: 20px;
     margin-right: 0;
   }
@@ -9129,175 +9128,4 @@ body.account-order {
 .stars-input label input:focus:not(:checked) ~ .icon-star:last-child {
   color: #fece22;
   text-shadow: 0 0 5px #fece22;
-}
-
-.reward-block {
-  padding: 40px 0;
-  border-top: 1px solid rgba(164, 164, 164, 0.2);
-}
-
-.reward-block__header {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 27px;
-  color: #595959;
-  display: block;
-  margin-bottom: 25px;
-}
-
-.reward-block__text {
-  font-size: 18px;
-  line-height: 25px;
-  color: #595959;
-}
-
-.reward-block__text b {
-  font-weight: bold;
-  color: #F96F14;
-}
-
-.reward-footer {
-  border: 1px solid rgba(249, 111, 20, 0.3);
-  -webkit-box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.11);
-          box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.11);
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 40px 25px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 15px;
-  position: relative;
-}
-
-.reward-footer__header {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 27px;
-  color: #595959;
-  display: block;
-  margin: 0 0 25px;
-}
-
-.reward-footer__text {
-  display: block;
-  font-size: 18px;
-  line-height: 25px;
-  color: #F96F14;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.reward-steps {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 -15px 40px;
-}
-
-@media (max-width: 1199px) {
-  .reward-steps {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.reward-steps__item {
-  border: 1px solid rgba(249, 111, 20, 0.3);
-  -webkit-box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.11);
-          box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.11);
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 25px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 15px;
-  position: relative;
-}
-
-@media (max-width: 1199px) {
-  .reward-steps__item {
-    margin: 7px;
-    padding: 15px;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-}
-
-.reward-steps__item:before {
-  display: none;
-  position: absolute;
-  right: -65px;
-  width: 100px;
-  height: 50px;
-  content: '';
-  z-index: 200;
-}
-
-@media (max-width: 1199px) {
-  .reward-steps__item:before {
-    display: none !important;
-  }
-}
-
-.reward-steps__item:nth-child(1):before {
-  display: block;
-  bottom: 30px;
-  background: url(/assets/img/reward-arrow-1.svg) no-repeat center/contain;
-}
-
-.reward-steps__item:nth-child(2):before {
-  display: block;
-  top: 30px;
-  background: url(/assets/img/reward-arrow-2.svg) no-repeat center/contain;
-}
-
-.reward-steps__text {
-  width: 70%;
-  text-align: center;
-  font-size: 18px;
-  line-height: 25px;
-  color: #595959;
-}
-
-.reward-steps__header {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 27px;
-  color: #595959;
-  display: block;
-  margin: 10px 0;
 }

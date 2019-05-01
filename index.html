@@ -32,6 +32,10 @@
                     </div>
 
                     <div class="header__menu">
+                        <a href="/search" class="header-mob__search">
+                            <span class="icon-search"></span>
+                        </a>
+
                         <a href=""><span class="icon-like"></span> Мои желания</a>
                         <a href=""><span class="icon-check"></span> Проверить заказ</a>
                         <a href=""><span class="icon-user"></span> Войти</a>
@@ -41,6 +45,10 @@
         </div>
         <div class="container">
             <div class="header__i">
+                <div class="header-mob__menu" onclick="toggleMenu('general')">
+                        <span class="icon-search"></span>
+                </div>
+                
                 <a href="#" class="header__logo">
                     <img src="/assets/img/logo.svg" />
                 </a>
@@ -1838,8 +1846,8 @@
     </footer>
 
 
-    <div class="mobile-menu">
-        <div class="mobile-menu__close" onclick="toggleMenu()"></div>
+    <div class="mobile-menu mobile-menu--general">
+        <div class="mobile-menu__close" onclick="toggleMenu('general')"></div>
     
                 <a href="/pay">
                 Оплата        </a>
@@ -1855,6 +1863,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
+
+
+        function toggleMenu(name) {
+            $('.mobile-menu--' + name).toggleClass('mobile-menu--open');
+        }
 
         $(document).ready(function () {
             $('.home-tabs__caption').on('click', 'li:not(.active)', function () {
