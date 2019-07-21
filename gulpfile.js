@@ -17,6 +17,7 @@ dir.sass = [
     '!' + dir.src + '_*.scss',
     '!' + dir.src + '**/_*.scss',
 ];
+
 dir.sass_watch = [
     dir.src + '*.scss',
     dir.src + '**/*.scss',
