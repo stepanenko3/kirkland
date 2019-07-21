@@ -27,7 +27,7 @@ function scssTask() {
         .pipe(changed(dir.dist))
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
-        .pipe(autoprefixer({ browsers: ['last 4 versions', '> .5%', 'ie 8', 'ie 7', 'iOS 7'] }))
+        .pipe(autoprefixer({ overrideBrowserslist: ['last 4 versions', '> .5%', 'ie 8', 'ie 7', 'iOS 7'] }))
         .pipe(gulp.dest(dir.dist))
 
         .pipe(cleancss())
