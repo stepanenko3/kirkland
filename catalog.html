@@ -312,8 +312,11 @@
         </div>
     </header>
 
-    <div class="inside-header inside-header--min">
+    <div class="inside-header">
         <div class="container">
+            <div class="inside-header__title">
+                product catalog kirkland
+            </div>
             <ul class="bread">
                 <li><a href="#">home</a></li>
                 <li><a href="#">catalog</a></li>
@@ -321,21 +324,481 @@
         </div>
     </div>
 
-    <div class="page-404">
-        <div class="container">
-            <div class="page-404__code">
-                404
+    <div class="container">
+        <div class="ocfilter-mobile-button" onclick="toggleMenu('ocfilter')">
+            Фильтры</div>
+        <div class="mobile-menu mobile-menu--ocfilter">
+            <div class="mobile-menu__close" onclick="toggleMenu('ocfilter')"></div>
+
+
+        </div>
+        <div class="ocfilter" id="ocfilter">
+            <div class="hidden" id="ocfilter-button">
+                <button class="bdisabled" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Загрузка.."></button>
             </div>
-            <div class="page-404__text">
-                Something went wrong :(
+            <div id="ocfilter-content">
+
+
+
+
+
+                <div class="ocfilter-option " id="option-30136">
+                    <div class="option-name">
+                        test
+                        <!--
+                                                            -->
+                        <span class="slide"></span>
+                    </div>
+
+
+
+
+                    <div class="option-values custom_filter">
+
+
+
+
+
+
+                        <label id="v-301364286217086">
+                            <input type="checkbox" name="ocfilter_filter[30136]"
+                                value="https://markdavid.stpnnk.top/rent/test/test1" class="ocf-target">
+                            <a href="https://markdavid.stpnnk.top/rent/test/test1">test1</a>
+                            <small>(2)</small>
+                        </label>
+
+
+
+
+
+
+                        <label id="v-301364286217087">
+                            <input type="checkbox" name="ocfilter_filter[30136]"
+                                value="https://markdavid.stpnnk.top/rent/test/test2" class="ocf-target">
+                            <a href="https://markdavid.stpnnk.top/rent/test/test2">test2</a>
+                            <small>(1)</small>
+                        </label>
+
+
+
+
+
+
+                        <label id="v-301364286217088">
+                            <input type="checkbox" name="ocfilter_filter[30136]"
+                                value="https://markdavid.stpnnk.top/rent/test/test3" class="ocf-target">
+                            <a href="https://markdavid.stpnnk.top/rent/test/test3">test3</a>
+                            <small>(1)</small>
+                        </label>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="ocfilter-option " id="option-30135">
+                    <div class="option-name">
+                        demo
+                        <!--
+                                                            -->
+                        <span class="slide"></span>
+                    </div>
+
+
+
+
+                    <div class="option-values custom_filter">
+
+
+
+
+
+
+                        <label id="v-301354286217083">
+                            <input type="checkbox" name="ocfilter_filter[30135]"
+                                value="https://markdavid.stpnnk.top/rent/demo/demo1" class="ocf-target">
+                            <a href="https://markdavid.stpnnk.top/rent/demo/demo1">demo1</a>
+                            <small>(1)</small>
+                        </label>
+
+
+
+
+
+
+                        <label id="v-301354286217084">
+                            <input type="checkbox" name="ocfilter_filter[30135]"
+                                value="https://markdavid.stpnnk.top/rent/demo/demo2" class="ocf-target">
+                            <a href="https://markdavid.stpnnk.top/rent/demo/demo2">demo2</a>
+                            <small>(2)</small>
+                        </label>
+
+
+
+
+
+
+                        <label id="v-301354286217085">
+                            <input type="checkbox" name="ocfilter_filter[30135]"
+                                value="https://markdavid.stpnnk.top/rent/demo/demo3" class="ocf-target">
+                            <a href="https://markdavid.stpnnk.top/rent/demo/demo3">demo3</a>
+                            <small>(1)</small>
+                        </label>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
             </div>
-            <div class="page__center">
-                <a href="/" class="page__button">
-                    Home page
+
+
+
+        </div>
+
+        <div class="catalog-line">
+            <div class="selected-filters">
+                <a href="#" class="selected-filters__reset">
+                    CLEAR ALL FILTERS
                 </a>
+                <a href="#" class="selected-filters__item">
+                    filter 02
+                </a>
+                <a href="#" class="selected-filters__item">
+                    filter 02
+                </a>
+                <a href="#" class="selected-filters__item">
+                    filter 02
+                </a>
+            </div>
+
+            <div class="catalog-line__sort">
+                <select id="input-sort" onchange="location = this.value;">
+                    <option value="#">По умолчанию</option>
+                    <option value="#">По умолчанию</option>
+                    <option value="#">По умолчанию</option>
+                    <option value="#">По умолчанию</option>
+                    <option value="#">По умолчанию</option>
+                </select>
+            </div>
+        </div>
+        <div class="products-list">
+            <div class="product">
+                <div class="product__label">
+                    new
+                </div>
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__label product__label--orange">
+                    SALE!
+                </div>
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image">
+                    <img src="/assets/img/product.png" />
+                    <div class="product__button">
+                        add to cart
+                    </div>
+                </div>
+                <div class="product__reviews">
+                    <div>3 reviews</div>
+                    <div class="rating">
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star active"></span>
+                        <span class="icon-star"></span>
+                    </div>
+                </div>
+                <div class="product__title">
+                    Kirkland Signature Fish Oil Signature Fish Oil
+                </div>
+                <div class="product__price">
+                    $39.99
+                </div>
+            </div>
+        </div>
+
+        <ul class="pagination"><li class="active"><span>1</span></li><li><a href="https://kirkland.dvij.com.ua/demo_2?limit=1&amp;page=2">2</a></li><li><a href="https://kirkland.dvij.com.ua/demo_2?limit=1&amp;page=2">&gt;|</a></li></ul>
+
+        <div class="page__center">
+            <div class="page__button">
+                Load more
             </div>
         </div>
     </div>
+
+    <div class="page">
+        <div class="container">
+            <div class="line-form">
+                <div class="line-form__name">
+                    Exclusive Email Offers & More:
+                </div>
+                <form id="inlineForm">
+                    <input placeholder="Email addres" type="email" name="email" />
+                    <button type="submit">sign up</button>
+                </form>
+                <div class="line-form__social">
+                    <a href="#" class="icon-instagram"></a>
+                    <a href="#" class="icon-facebook"></a>
+                    <a href="#" class="icon-youtube"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="page__text page__text--min">
+                        It accounts for almost a third of all Costco sales and is growing faster than Costco sales.
+                        Kirkland branded bottled water is produced by private label bottler Niagara Bottling. It
+                        accounts for almost a third of all Costco sales and is growing faster than Costco sales.
+                        Kirkland branded bottled water is produced by private label bottler Niagara Bottling.
+                        <br /><br />
+                        It accounts for almost a third of all Costco sales and is growing faster than Costco sales.
+                        Kirkland branded bottled water is produced by private label bottler Niagara Bottling. It
+                        accounts for almost a third of all Costco sales and is growing faster than Costco sales.
+                        Kirkland branded bottled water is produced by private label bottler Niagara Bottling.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="page__text page__text--min">
+                        It accounts for almost a third of all Costco sales and is growing faster than Costco sales.
+                        Kirkland branded bottled water is produced by private label bottler Niagara Bottling. It
+                        accounts for almost a third of all Costco sales and is growing faster than Costco sales.
+                        Kirkland branded bottled water is produced by private label bottler Niagara Bottling.
+                        <br /><br />
+                        It accounts for almost a third of all Costco sales and is growing faster than Costco sales.
+                        Kirkland branded bottled water is produced by private label bottler Niagara Bottling. It
+                        accounts for almost a third of all Costco sales and is growing faster than Costco sales.
+                        Kirkland branded bottled water is produced by private label bottler Niagara Bottling.
+                    </div>
+                </div>
+            </div>
+
+            <br /><br />
+        </div>
+    </div>
+
 
     <footer class="footer">
         <div class="container">
